@@ -1,7 +1,7 @@
-"""profiles_project URL Configuration
+"""templateProj URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+from . import views
+
+app_name = 'profiles_api'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('profiles_api.urls')),
+	path('hello-view/', views.HelloApiView.as_view()),
 ]

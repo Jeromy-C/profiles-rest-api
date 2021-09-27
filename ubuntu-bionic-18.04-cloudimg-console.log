@@ -615,4 +615,4 @@ Welcome to [1mUbuntu 18.04.6 LTS[0m!
 
 Ubuntu 18.04.6 LTS ubuntu-bionic ttyS0
 
-ubuntu-bionic login: 
+ubuntu-bionic login: [15320.670180] e1000 0000:00:03.0 enp0s3: Reset adapter
